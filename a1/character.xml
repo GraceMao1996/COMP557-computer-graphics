@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!-- hierachrical definition of a character -->
+<doc>
+    <node type="freejoint" name="root">
+    	<geom type="sphere" name="torso" center="0 0 0" scale="3 4 3"  color = "1 0 0"/>
+    	    <node type="ballxyz" name="l shoulder" position="-1.5 2 0">
+        	    <geom type="box" name="upper l arm" center="-0.5 -1 0" scale="1 2 1" color="1 0 0"/>
+				    <node type="hinge" name="l shouzhou" position="-0.5 -1.75 0" axis="1 0 0">
+					     <geom type="sphere" name="lower l arm" center="0 -0.75 0" scale="0.6 1.5 1" color="1 0 0"/>
+					</node>
+    	    </node>
+		    <node type="ballxyz" name="r shoulder" position="1.5 2 0">
+        	    <geom type="box" name="upper r arm" center="0.5 -1 0" scale="1 2 1"  color="1 0 0"/>
+				    <node type="hinge" name="l lala" position="0 -1.5 0" axis="-1 0 0">
+					    <geom type="box" name="lower l leg" center="0 -0.75 0" scale="0.8 1.5 0.8" color="1 0 0"/>
+						    <node type="ballxyz" name="r foot" position="0 -1.5 0">
+        	                    <geom type="sphere" name="l foot" center="0 -0.75 0" scale="1 1.5 1.5" color="1 0 0"/>
+						    </node>
+					</node>
+    	    </node>
+			<node type="ballxyz" name="neck" position="0 2 0">
+        	    <geom type="sphere" name="head" center="0 1 0" scale="2 1.6 1"  color="1 0 0" />
+				
+				<geom type="sphere" name="l eye" center ="-0.5 1 0.5" scale="0.2 0.2 0.2" color="0 0 0" />
+				
+				<geom type="sphere" name="r eye" center ="0.5 1 0.5" scale="0.2 0.2 0.2" color="0 0 0" />
+    	    </node>
+			<node type="ballxyz" name="l leg" position="-1 -2 0">
+        	    <geom type="box" name="upper l leg" center="0 -0.75 0" scale="1 1.5 1" color="1 0 0"/>
+				    <node type="hinge" name="l lala" position="0 -1.5 0" axis="-1 0 0">
+					    <geom type="box" name="lower l leg" center="0 -0.75 0" scale="0.8 1.5 0.8" color="1 0 0"/>
+						    <node type="ballxyz" name="r foot" position="0 -1.5 0">
+        	                    <geom type="sphere" name="l foot" center="0 -0.75 0" scale="1 1.5 1.5" color="1 0 0"/>
+						    </node>
+					</node>
+    	    </node>
+			<node type="ballxyz" name="r leg" position="1 -2 0">
+        	    <geom type="box" name="upper r leg" center="0 -0.75 0" scale="1 1.5 1" color="1 0 0"/>
+				    <node type="hinge" name="r lala" position="0 -1.5 0" axis="-1 0 0">
+					    <geom type="box" name="lower r leg" center="0 -0.75 0" scale="0.8 1.5 0.8" color="1 0 0"/>
+						    <node type="ballxyz" name="r foot" position="0 -1.5 0">
+        	                    <geom type="sphere" name="r foot" center="0 -0.75 0" scale="1 1.5 1.5" color="1 0 0"/>
+						    </node>
+					</node>
+    	    </node>
+			
+	</node>
+</doc>
